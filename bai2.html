@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng điểm sinh viên</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .score-container {
+            position: relative;
+            width: 90%;
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 30px 20px 20px;
+            background-color: white;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .score-label {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background-color: #2563eb;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            max-width: 100%;
+            border-collapse: collapse;
+            margin: auto;
+            font-size: 1rem;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        td:first-child,
+        td:last-child {
+            text-align: center;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f8fafc;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #e0f2fe;
+        }
+
+        tbody tr:hover {
+            background-color: #bfdbfe;
+        }
+
+        .average {
+            font-weight: bold;
+            background-color: #fde68a !important;
+        }
+
+        .score-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="score-title">KẾT QUẢ HỌC TẬP</h1>
+
+    <div class="score-container">
+        <span class="score-label">BẢNG ĐIỂM</span>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã sinh viên</th>
+                    <th>Họ và tên</th>
+                    <th>Môn học</th>
+                    <th>Điểm</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>SV001</td>
+                    <td>Nguyễn Văn An</td>
+                    <td>HTML và CSS</td>
+                    <td>9.0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>SV002</td>
+                    <td>Trần Thị Bình</td>
+                    <td>HTML và CSS</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>SV003</td>
+                    <td>Lê Văn Cường</td>
+                    <td>HTML và CSS</td>
+                    <td>7.5</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>SV004</td>
+                    <td>Phạm Thị Dung</td>
+                    <td>HTML và CSS</td>
+                    <td>8.0</td>
+                </tr>
+                <tr class="average">
+                    <td colspan="4">ĐIỂM TRUNG BÌNH</td>
+                    <td>8.25</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
