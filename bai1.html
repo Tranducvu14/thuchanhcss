@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1, h2 {
+            text-align: center;
+            color: #1d4ed8;
+        }
+
+        .profile h2 {
+            color: rgb(14, 116, 144);
+        }
+
+        .hobbies {
+            list-style-type: square;
+            padding-left: 25px;
+        }
+
+        .hobbies li {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 6px;
+        }
+
+        .hobbies li:hover {
+            background-color: #dbeafe;
+        }
+    </style>
+</head>
+<body>
+    <h1>THÔNG TIN CÁ NHÂN</h1>
+
+    <div class="profile">
+        <img
+            id="avatar"
+            src="https://placehold.co/150x150"
+            alt="Ảnh đại diện">
+
+        <!-- Inline CSS -->
+        <h2 style="color: crimson;">Nguyễn Văn An</h2>
+
+        <p><strong>Mã sinh viên:</strong> SV001</p>
+        <p><strong>Lớp:</strong> Công nghệ thông tin</p>
+        <p><strong>Email:</strong> an@example.com</p>
+
+        <h2>Sở thích của tôi</h2>
+        <ul class="hobbies">
+            <li>Đọc sách</li>
+            <li>Nghe nhạc</li>
+            <li>Lập trình website</li>
+            <li>Chơi thể thao</li>
+        </ul>
+
+        <p>
+            Website yêu thích:
+            <a href="https://www.w3schools.com/" target="_blank">
+                Học lập trình
+            </a>
+        </p>
+    </div>
+</body>
+</html>
